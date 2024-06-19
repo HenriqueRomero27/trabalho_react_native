@@ -1,19 +1,22 @@
-import { Image, StyleSheet, Platform, TouchableOpacity } from 'react-native';
+import { Image, StyleSheet, Platform, TouchableOpacity, View } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
+import useLoadFonts from "../../components/useLoadFonts";
+
 import Home from "@/components/home"
 
 import { useState } from 'react';
 
 export default function HomeScreen() {
+  const { fontsLoaded, onLayoutRootView } = useLoadFonts();
   return (
-    <div style={style.container}>
+    <View style={style.container} onLayout={onLayoutRootView}>
       <Home />
-    </div>
+    </View>
   );
 }
 
