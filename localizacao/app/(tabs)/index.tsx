@@ -25,6 +25,9 @@ const style = StyleSheet.create({
     padding: '2%',
     backgroundColor: "#FFF",
     flex: 1,
+    width: 430,
+    display: "flex",
+    alignSelf: "center"
   },
   logo: {
     height: 50,

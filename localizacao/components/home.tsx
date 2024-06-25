@@ -16,8 +16,8 @@ export default function HomeScreen() {
           <View style={style.container} onLayout={onLayoutRootView}>
             <Image source={Logo} style={style.logo} />
             <Text style={{fontSize: 34, color: "#4D1AB9", fontWeight: "bold", textAlign: "center", fontFamily: 'Poppins_Medium'}}>Find Your Location!</Text>
-            <Text style={{color: "#4D1AB9", textAlign: "center", fontFamily: 'Poppins_Medium', marginBottom: 15}}>Here, you can find the latitude and longitude of  anywhere in the world!</Text>
-            <Text style={{color: "#4D1AB9", textAlign: "center", fontFamily: 'Poppins_Medium'}}>Just click the button below and find out!</Text>
+            <Text style={{marginTop: 15, width: 220, color: "#4D1AB9", textAlign: "center", fontFamily: 'Poppins_Medium', marginBottom: 15}}>Here, you can find the latitude and longitude of  anywhere in the world!</Text>
+            <Text style={{marginTop: 15, width: 220, color: "#4D1AB9", textAlign: "center", fontFamily: 'Poppins_Medium'}}>Just click the button below and find out!</Text>
             <TouchableOpacity onPress={() => setPage("loc")} style={style.button}>
               <p>Next</p>
             </TouchableOpacity>
@@ -39,11 +39,11 @@ const style = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     flexDirection: "column",
-    width: 500
+    alignItems:  "center"
   },
   logo: {
-    height: 50,
-    width: 50,
+    height: 75,
+    width: 75,
     alignSelf: "center"
   },
   colorText: {
