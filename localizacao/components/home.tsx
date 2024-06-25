@@ -34,14 +34,12 @@ export default function HomeScreen() {
 
 const style = StyleSheet.create({
   container: {
-    padding: '2%',
     backgroundColor: "#FFF",
     display: "flex",
     flex: 1,
-    // alignContent: 'center',
-    // alignItems: "center",
     justifyContent: "center",
-    flexDirection: "column"
+    flexDirection: "column",
+    width: 500
   },
   logo: {
     height: 50,
